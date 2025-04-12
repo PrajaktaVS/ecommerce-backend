@@ -15,6 +15,11 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 app.use(express.json());
+
+app.get("/", (req, res) => {
+    res.send("Backend is running!");
+  });
+  
 app.use("/api/auth", router);
 app.use(errorMiddleware);
 
