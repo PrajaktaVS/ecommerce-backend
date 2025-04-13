@@ -8,7 +8,7 @@ const errorMiddleware = require("./middlewares/error-middleware");
 
 const allowedOrigins = [
     "http://localhost:5173",
-    "https://ecommerce-frontend-gamma-amber.vercel.app"
+    "https://ecommerce-frontend-g0xfv74bu-prajakta-satputes-projects.vercel.app"
 ]
 
 
