@@ -8,7 +8,7 @@ const errorMiddleware = require("./middlewares/error-middleware");
 
 const allowedOrigins = [
     "http://localhost:5173",
-    "https://ecommerce-frontend-g0xfv74bu-prajakta-satputes-projects.vercel.app"
+    "https://ecommerce-frontend-prajakta-satputes-projects.vercel.app"
 ]
 
 
@@ -25,6 +25,7 @@ const corsOptions = {
 };
 
 app.use(cors(corsOptions));
+app.options("*", cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
